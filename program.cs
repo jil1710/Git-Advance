@@ -16,6 +16,9 @@ internal class Calculation
             Substraction substraction = new Substraction(30, 20);
             Console.WriteLine("Substraction : " + calculation.calculateOperation(substraction));
             
+            Division division = new Division(30, 20);
+            Console.WriteLine("Substraction : " + calculation.calculateOperation(division));
+            
             Console.ReadKey();
         }
 }
