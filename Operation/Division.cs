@@ -11,6 +11,15 @@ internal class Division : IOperation
 
     public int Perform()
     {
-        return num1 / num2;
+        try{
+            return num1 / num2;
+        }
+        catch(DivideByZeroException ex){
+            Console.WriteLine(ex.Message);
+        }
+        catch(Exception ex){
+            Console.WriteLine(ex.Message);
+        }
+        
     }
 }
